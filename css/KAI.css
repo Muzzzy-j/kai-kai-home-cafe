@@ -41,14 +41,56 @@ box-shadow: 5px 5px 10px ;
 
 }
 .main img{
+justify-content: center;
 height: 250px;
+position: relative;
 border-radius: 50%;
 width: 250px;
 margin: 25px;
-
+top: 0;
+transition:  top ease 0.5s;
+}
+.main img:hover{
+  top: -25px;
+}
+.button{
+position: relative;
+width: 70px;
+height: 30px;
+font-size: 10px;
+background-color: black;
+color: aliceblue;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transform: width .5s;
+border-radius: .5s;
 
 }
-.Yin-yang{
+.button * {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ transition: opacity .25s;
+}
+.icon{
+  opacity: 0;
+
+}
+.button:focus{
+  width: 30px;
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+.button:focus .text{
+  opacity: 0;
+}
+.button:focus .icon{
+  opacity: 1;
+  transition-delay: .5s;
+}
+/* .Yin-yang{
 
   width: 96px;
   height: 48px;
@@ -59,8 +101,8 @@ margin: 25px;
   border-width: 2px 2px 50px 2px;
   border-radius: 100%;
   animation: spin 8s linear infinite;
-}
-.Yin-yang::before{
+} */
+/* .Yin-yang::before{
   content: "";
   background: white;
   border: 18px solid black;
@@ -89,4 +131,4 @@ margin: 25px;
     -webkit-transform: rotate(360deg) ;
     transform: rotate();
   }
-}
+} */
