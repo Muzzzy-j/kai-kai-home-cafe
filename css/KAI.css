@@ -10,6 +10,7 @@ body{
    
   
 }
+
 .header h1{
 color: yellow;
 stroke: aliceblue;
@@ -232,6 +233,8 @@ border-radius: .5s;
 .grid{
 display: flex;
 position: relative;
+justify-content: center;
+
 }
 .container{
   display: flex;
